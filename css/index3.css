@@ -1,0 +1,133 @@
+h2{
+  text-align: center;
+   font-family: 'Palatino Linotype';
+  color: dodgerblue;
+  font-size:200%;
+}
+
+h3 {
+    top:5%;
+    left:7%;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+}
+
+a {
+    text-decoration: none;
+    font-size: larger;
+    color:rgb(2, 1, 1);
+}
+
+header{
+    grid-area: cabecera;
+    text-align: center;
+    font-family:Century Gothic;
+}
+
+article {
+  grid-area: menu;
+  margin-top: 30px;
+  background-color: white;
+  padding: 1%;
+  align-content: center;
+  font-family: 'Palatino Linotype';
+  color: black;
+  text-align: left;
+  margin-right: 150px;
+  margin-left: 150px;
+   font-size: 30px;
+}
+
+footer{
+    grid-area: footer;
+    font-family: 'Palatino Linotype';
+    margin-top: 90px;
+    text-align: center;
+   color: black;
+   margin-left: 150px;
+    margin-right: 150px;
+   padding: 30px 10px;
+   text-shadow: 2px 2px 5px #6BDCFF;
+  background-color: white;
+  font-size: 30px;
+}
+
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  padding: 50px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.header a.titulo {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+
+.header a:hover {
+  background-color: #9BE7FF;
+  color: black;
+}
+
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+table {
+   width: 100%;
+   border: 3px solid ;
+   color: dodgerblue;
+   
+}
+
+td, th {
+   background: white;
+   color: dodgerblue;
+   text-align: center;
+   border: 1px solid dodgerblue;
+   vertical-align: top;
+   border-collapse: collapse;
+}
+td{
+   color: black;
+   text-align: center;
+}
+
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+main {
+    display: grid;
+    grid-template-areas:
+   'cabecera cabecera cabecera cabecera cabecera cabecera'
+   'menu menu menu menu menu menu'
+   'footer footer footer footer footer footer'
+  ;
+
+}
